@@ -53,8 +53,17 @@ h1, h2, h3, h4, h5, h6 {
 .hero-mobile-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     object-position: top;
+    background-color: var(--dark-bg);
+}
+
+.hero-mobile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: top;
+    background-color: var(--dark-bg);
 }
 
 .gradient-overlay {
@@ -170,13 +179,18 @@ h1, h2, h3, h4, h5, h6 {
     .hero h1 {
         font-size: 2rem;
         margin-bottom: 20px;
-        text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        color: var(--gold);
+        text-shadow: none;
+        background: none;
+        -webkit-background-clip: unset;
+        -webkit-text-fill-color: unset;
     }
 
     .hero-text {
         font-size: 1.1rem;
         margin-bottom: 30px;
-        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        color: #fff;
+        text-shadow: none;
     }
 
     .cta-button {
@@ -188,8 +202,8 @@ h1, h2, h3, h4, h5, h6 {
             to bottom,
             rgba(0,0,0,0) 0%,
             rgba(0,0,0,0) 60%,
-            rgba(0,0,0,0.8) 70%,
-            rgba(0,0,0,0.95) 100%
+            rgba(0,0,0,0.9) 70%,
+            rgba(0,0,0,1) 100%
         );
     }
 }
