@@ -1,9 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Smooth scroll for anchor links
+    // Smooth scroll para links de navegação
     document.querySelectorAll('.scroll-to').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
-            
             const targetId = this.getAttribute('href');
             const targetElement = document.querySelector(targetId);
             
