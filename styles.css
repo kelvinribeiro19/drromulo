@@ -377,13 +377,26 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 0 15px 0;
 }
 
-.module-card ul {
+.module-content ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+.module-content ul li {
+    margin-bottom: 10px;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.module-content ul li i {
+    color: var(--gold);
+    font-size: 1rem;
 }
 
 .module-card li {
@@ -423,19 +436,6 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.1rem;
 }
 
-.module-content ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.module-content li {
-    margin-bottom: 10px;
-    color: var(--white);
-    font-size: 0.9rem;
-    line-height: 1.4;
-}
-
 @media (max-width: 768px) {
     .module-grid {
         grid-template-columns: 1fr;
@@ -455,8 +455,9 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 1.1rem;
     }
 
-    .module-card li {
-        font-size: 0.85rem;
+    .module-content ul li {
+        font-size: 0.9rem;
+        margin-bottom: 8px;
     }
 
     .qualifications {
@@ -465,11 +466,6 @@ h1, h2, h3, h4, h5, h6 {
 
     .qualification-item span {
         font-size: 1rem;
-    }
-
-    .module-content li {
-        font-size: 0.85rem;
-        margin-bottom: 8px;
     }
 }
 
